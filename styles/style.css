@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background: black;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.input {
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+.btn {
+    background: green;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:disabled {
+    opacity: 0.7;
+}
+.title__time {
+    color: white;
+}
+.game__block {
+    width: 500px;
+    height: 500px;
+    background: rgb(28, 26, 26);
+    box-shadow: 0 0 10px 0 white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.game__end{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.game__end h2{
+    color: white;
+}
+.game__end button{
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.item {
+    position: absolute;
+    cursor: pointer;
+}
+.item.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.item.circle{
+    clip-path: circle(50% at 50% 50%);
+}
